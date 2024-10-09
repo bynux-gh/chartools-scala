@@ -1,0 +1,403 @@
+2024.10.09 00:05:56 INFO  Started: Metals version 1.3.0 in folders '/home/bryn/Projects/Code/Scala/chartools' for client helix 24.7.[0m
+SLF4J: Class path contains multiple SLF4J providers.
+SLF4J: Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@670327d9]
+SLF4J: Found provider [scribe.slf4j.ScribeServiceProvider@526edc32]
+SLF4J: See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual provider is of type [ch.qos.logback.classic.spi.LogbackServiceProvider@670327d9]
+00:05:57.188 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- Flyway Community Edition 9.22.3 by Redgate
+00:05:57.190 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- See release notes here: https://rd.gt/416ObMi
+00:05:57.190 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- 
+00:05:57.192 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classpath resources at 'classpath:db/callback' ...
+00:05:57.193 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Determining location urls for classpath:db/callback using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@acccbd0 ...
+00:05:57.193 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Unable to resolve location classpath:db/callback.
+00:05:57.193 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classpath resources at 'classpath:db/migration' ...
+00:05:57.193 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Determining location urls for classpath:db/migration using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@acccbd0 ...
+00:05:57.193 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning URL: file:/usr/share/java/metals/metals/db/migration
+00:05:57.194 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.FileSystemClassPathLocationScanner -- Scanning starting at classpath root in filesystem: /usr/share/java/metals/metals/
+00:05:57.194 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.FileSystemClassPathLocationScanner -- Scanning for resources in path: /usr/share/java/metals/metals/db/migration (db/migration)
+00:05:57.195 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V1__Create_tables.sql
+00:05:57.195 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V2__Server_discovery.sql
+00:05:57.195 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V3__Jar_symbols.sql
+00:05:57.195 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V4__Fingerprints.sql
+00:05:57.195 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V5__Jar_type_hierarchy.sql
+00:05:57.195 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V6__Delete_indices.sql
+00:05:57.195 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classes at classpath:db/migration
+00:05:57.199 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V5__Jar_type_hierarchy.sql
+00:05:57.200 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V4__Fingerprints.sql
+00:05:57.200 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V6__Delete_indices.sql
+00:05:57.200 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V2__Server_discovery.sql
+00:05:57.200 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V3__Jar_symbols.sql
+00:05:57.200 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V1__Create_tables.sql
+00:05:57.260 [pool-1-thread-1] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:h2:file:/home/bryn/Projects/Code/Scala/chartools/.metals/metals (H2 2.2)
+00:05:57.260 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- Driver: H2 JDBC Driver 2.2.224 (2023-09-17)
+00:05:57.260 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- DDL Transactions Supported: false
+00:05:57.261 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.SchemaHistoryFactory -- Schemas: 
+00:05:57.261 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.SchemaHistoryFactory -- Default schema: null
+00:05:57.266 [pool-1-thread-1] WARN org.flywaydb.core.internal.database.base.Database -- Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+00:05:57.267 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.callback.SqlScriptCallbackFactory -- Scanning for SQL callbacks ...
+00:05:57.272 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbValidate -- Validating migrations ...
+00:05:57.282 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V5__Jar_type_hierarchy.sql (filename: V5__Jar_type_hierarchy.sql)
+00:05:57.282 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V4__Fingerprints.sql (filename: V4__Fingerprints.sql)
+00:05:57.282 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V6__Delete_indices.sql (filename: V6__Delete_indices.sql)
+00:05:57.282 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V2__Server_discovery.sql (filename: V2__Server_discovery.sql)
+00:05:57.282 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V3__Jar_symbols.sql (filename: V3__Jar_symbols.sql)
+00:05:57.282 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V1__Create_tables.sql (filename: V1__Create_tables.sql)
+00:05:57.283 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V5__Jar_type_hierarchy.sql (filename: V5__Jar_type_hierarchy.sql)
+00:05:57.283 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V4__Fingerprints.sql (filename: V4__Fingerprints.sql)
+00:05:57.283 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V6__Delete_indices.sql (filename: V6__Delete_indices.sql)
+00:05:57.283 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V2__Server_discovery.sql (filename: V2__Server_discovery.sql)
+00:05:57.283 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V3__Jar_symbols.sql (filename: V3__Jar_symbols.sql)
+00:05:57.283 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V1__Create_tables.sql (filename: V1__Create_tables.sql)
+00:05:57.284 [pool-1-thread-1] INFO org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+00:05:57.287 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbValidate -- Successfully validated 6 migrations (execution time 00:00.014s)
+00:05:57.289 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbSchemas -- Skipping creation of existing schema: "PUBLIC"
+00:05:57.292 [pool-1-thread-1] INFO org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+00:05:57.294 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.parser.Parser -- Parsing  ...
+00:05:57.301 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 1: CREATE TABLE IF NOT EXISTS "PUBLIC"."flyway_schema_history" (
+    "installed_rank" INT NOT NULL,
+    "version" VARCHAR(50),
+    "description" VARCHAR(200) NOT NULL,
+    "type" VARCHAR(20) NOT NULL,
+    "script" VARCHAR(1000) NOT NULL,
+    "checksum" INT,
+    "installed_by" VARCHAR(100) NOT NULL,
+    "installed_on" TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "execution_time" INT NOT NULL,
+    "success" BOOLEAN NOT NULL,
+    CONSTRAINT "flyway_schema_history_pk" PRIMARY KEY ("installed_rank")
+) AS SELECT -1, NULL, '<< Flyway Schema History table created >>', 'TABLE', '', NULL, 'SA', CURRENT_TIMESTAMP, 0, TRUE
+00:05:57.301 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 14: CREATE INDEX "PUBLIC"."flyway_schema_history_s_idx" ON "PUBLIC"."flyway_schema_history" ("success")
+00:05:57.301 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: CREATE TABLE IF NOT EXISTS "PUBLIC"."flyway_schema_history" (
+    "installed_rank" INT NOT NULL,
+    "version" VARCHAR(50),
+    "description" VARCHAR(200) NOT NULL,
+    "type" VARCHAR(20) NOT NULL,
+    "script" VARCHAR(1000) NOT NULL,
+    "checksum" INT,
+    "installed_by" VARCHAR(100) NOT NULL,
+    "installed_on" TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "execution_time" INT NOT NULL,
+    "success" BOOLEAN NOT NULL,
+    CONSTRAINT "flyway_schema_history_pk" PRIMARY KEY ("installed_rank")
+) AS SELECT -1, NULL, '<< Flyway Schema History table created >>', 'TABLE', '', NULL, 'SA', CURRENT_TIMESTAMP, 0, TRUE
+00:05:57.304 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+00:05:57.304 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: CREATE INDEX "PUBLIC"."flyway_schema_history_s_idx" ON "PUBLIC"."flyway_schema_history" ("success")
+00:05:57.306 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+00:05:57.306 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Created Schema History table "PUBLIC"."flyway_schema_history"
+00:05:57.312 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Current version of schema "PUBLIC": << Empty Schema >>
+00:05:57.312 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.parser.Parser -- Parsing V1__Create_tables.sql ...
+00:05:57.314 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 4: -- The relationship between library dependency sources under .metals/readonly/**
+-- and build targets they belong to. Required to know what classpath to use
+-- for compiling dependency sources.
+create table dependency_source(
+  text_document_uri varchar primary key,
+  build_target_uri varchar not null
+)
+00:05:57.315 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 12: -- The relationship between library dependency sources under .metals/readonly/**
+-- and worksheets they belong to. Required to know what classpath to use
+-- for compiling dependency sources.
+create table worksheet_dependency_source(
+  text_document_uri varchar primary key,
+  worksheet_uri varchar not null
+)
+00:05:57.315 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 19: -- The relationship between what library dependency sources under .metals/readonly/**
+-- map to which build targets.
+create table sbt_digest(
+  md5 varchar,
+  status tinyint not null,
+  when_recorded timestamp
+)
+00:05:57.316 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 27: -- Which window/showMessage and window/showMessageRequest dialogues have been dismissed
+-- by the user via "Don't show again" or closed by clicking on "x".
+create table dismissed_notification(
+  id int,
+  when_dismissed timestamp,
+  when_expires timestamp
+)
+00:05:57.316 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 34: -- The choice of build tool when multiple build tool files are found in a workspace
+create table chosen_build_tool(
+  build_tool varchar primary key
+)
+00:05:57.317 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Starting migration of schema "PUBLIC" to version "1 - Create tables" ...
+00:05:57.318 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "PUBLIC" to version "1 - Create tables"
+00:05:57.319 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- The relationship between library dependency sources under .metals/readonly/**
+-- and build targets they belong to. Required to know what classpath to use
+-- for compiling dependency sources.
+create table dependency_source(
+  text_document_uri varchar primary key,
+  build_target_uri varchar not null
+)
+00:05:57.320 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+00:05:57.320 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- The relationship between library dependency sources under .metals/readonly/**
+-- and worksheets they belong to. Required to know what classpath to use
+-- for compiling dependency sources.
+create table worksheet_dependency_source(
+  text_document_uri varchar primary key,
+  worksheet_uri varchar not null
+)
+00:05:57.321 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+00:05:57.321 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- The relationship between what library dependency sources under .metals/readonly/**
+-- map to which build targets.
+create table sbt_digest(
+  md5 varchar,
+  status tinyint not null,
+  when_recorded timestamp
+)
+00:05:57.322 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+00:05:57.322 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- Which window/showMessage and window/showMessageRequest dialogues have been dismissed
+-- by the user via "Don't show again" or closed by clicking on "x".
+create table dismissed_notification(
+  id int,
+  when_dismissed timestamp,
+  when_expires timestamp
+)
+00:05:57.322 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+00:05:57.322 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- The choice of build tool when multiple build tool files are found in a workspace
+create table chosen_build_tool(
+  build_tool varchar primary key
+)
+00:05:57.323 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+00:05:57.323 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Successfully completed migration of schema "PUBLIC" to version "1 - Create tables"
+00:05:57.325 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
+00:05:57.329 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.parser.Parser -- Parsing V2__Server_discovery.sql ...
+00:05:57.330 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 4: -- For each unique combination of installed build servers we select one server.
+-- The md5 checksum is computed from the names of the installed build servers, and
+-- the selected server is the server which the user chose for this workspace.
+create table chosen_build_server(
+  md5 varchar primary key,
+  selected_server varchar,
+  when_recorded timestamp
+)
+00:05:57.331 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Starting migration of schema "PUBLIC" to version "2 - Server discovery" ...
+00:05:57.332 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "PUBLIC" to version "2 - Server discovery"
+00:05:57.332 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- For each unique combination of installed build servers we select one server.
+-- The md5 checksum is computed from the names of the installed build servers, and
+-- the selected server is the server which the user chose for this workspace.
+create table chosen_build_server(
+  md5 varchar primary key,
+  selected_server varchar,
+  when_recorded timestamp
+)
+00:05:57.333 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+00:05:57.333 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Successfully completed migration of schema "PUBLIC" to version "2 - Server discovery"
+00:05:57.334 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
+00:05:57.335 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.parser.Parser -- Parsing V3__Jar_symbols.sql ...
+00:05:57.336 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 2: -- Indexed jars, the MD5 digest of path, modified time and size as key
+create table indexed_jar(
+  id int auto_increment unique,
+  md5 varchar primary key
+)
+00:05:57.337 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 7: -- Top Level Symbols per jar, allow for multiple jars with same symbols and paths
+create table toplevel_symbol(
+  symbol varchar not null,
+  path varchar not null,
+  jar int,
+  foreign key (jar) references indexed_jar (id) on delete cascade,
+  primary key (jar, path, symbol)
+)
+00:05:57.338 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 15: -- Create index to speedup lookup of jar symbols
+create index toplevel_symbol_jar on toplevel_symbol(jar)
+00:05:57.338 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Starting migration of schema "PUBLIC" to version "3 - Jar symbols" ...
+00:05:57.338 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "PUBLIC" to version "3 - Jar symbols"
+00:05:57.338 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- Indexed jars, the MD5 digest of path, modified time and size as key
+create table indexed_jar(
+  id int auto_increment unique,
+  md5 varchar primary key
+)
+00:05:57.342 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+00:05:57.342 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- Top Level Symbols per jar, allow for multiple jars with same symbols and paths
+create table toplevel_symbol(
+  symbol varchar not null,
+  path varchar not null,
+  jar int,
+  foreign key (jar) references indexed_jar (id) on delete cascade,
+  primary key (jar, path, symbol)
+)
+00:05:57.346 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+00:05:57.346 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- Create index to speedup lookup of jar symbols
+create index toplevel_symbol_jar on toplevel_symbol(jar)
+00:05:57.347 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+00:05:57.347 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Successfully completed migration of schema "PUBLIC" to version "3 - Jar symbols"
+00:05:57.348 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
+00:05:57.349 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.parser.Parser -- Parsing V4__Fingerprints.sql ...
+00:05:57.351 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 2: -- Fingerprints saved between invocations
+create table fingerprints(
+  path varchar not null,
+  text varchar not null,
+  md5 varchar not null,
+  id int auto_increment unique
+)
+00:05:57.351 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Starting migration of schema "PUBLIC" to version "4 - Fingerprints" ...
+00:05:57.352 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "PUBLIC" to version "4 - Fingerprints"
+00:05:57.352 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- Fingerprints saved between invocations
+create table fingerprints(
+  path varchar not null,
+  text varchar not null,
+  md5 varchar not null,
+  id int auto_increment unique
+)
+00:05:57.353 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+00:05:57.353 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Successfully completed migration of schema "PUBLIC" to version "4 - Fingerprints"
+00:05:57.354 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
+00:05:57.355 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.parser.Parser -- Parsing V5__Jar_type_hierarchy.sql ...
+00:05:57.357 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 2: -- Type hierarchy information, e.g. symbol: "a/MyException#", extended_name: "Exception"
+create table type_hierarchy(
+  symbol varchar not null,
+  parent_name varchar not null,
+  path varchar not null,
+  jar int,
+  is_resolved bit,
+  foreign key (jar) references indexed_jar (id) on delete cascade
+)
+00:05:57.357 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 11: create index type_hierarchy_jar on type_hierarchy(jar)
+00:05:57.357 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 13: alter table indexed_jar
+add type_hierarchy_indexed bit
+00:05:57.357 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Starting migration of schema "PUBLIC" to version "5 - Jar type hierarchy" ...
+00:05:57.357 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "PUBLIC" to version "5 - Jar type hierarchy"
+00:05:57.358 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- Type hierarchy information, e.g. symbol: "a/MyException#", extended_name: "Exception"
+create table type_hierarchy(
+  symbol varchar not null,
+  parent_name varchar not null,
+  path varchar not null,
+  jar int,
+  is_resolved bit,
+  foreign key (jar) references indexed_jar (id) on delete cascade
+)
+00:05:57.359 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+00:05:57.359 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: create index type_hierarchy_jar on type_hierarchy(jar)
+00:05:57.360 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+00:05:57.360 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: alter table indexed_jar
+add type_hierarchy_indexed bit
+00:05:57.366 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+00:05:57.366 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Successfully completed migration of schema "PUBLIC" to version "5 - Jar type hierarchy"
+00:05:57.368 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
+00:05:57.370 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.parser.Parser -- Parsing V6__Delete_indices.sql ...
+00:05:57.371 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 2: -- indexing type hierarchy has changed, so we want to reindex
+delete from indexed_jar
+00:05:57.371 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Starting migration of schema "PUBLIC" to version "6 - Delete indices" ...
+00:05:57.372 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "PUBLIC" to version "6 - Delete indices"
+00:05:57.372 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- indexing type hierarchy has changed, so we want to reindex
+delete from indexed_jar
+00:05:57.372 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+00:05:57.372 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Successfully completed migration of schema "PUBLIC" to version "6 - Delete indices"
+00:05:57.373 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
+00:05:57.378 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Successfully applied 6 migrations to schema "PUBLIC", now at version v6 (execution time 00:00.027s)
+00:05:57.386 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- Memory usage: 62 of 130M
+2024.10.09 00:05:56 WARN  Error while refreshing inlayHints: null
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Method not found: workspace/inlayHint/refresh
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1570)
+[0m
+2024.10.09 00:05:57 INFO  Attempting to connect to the build server...[0m
+2024.10.09 00:05:57 INFO  Running BSP server List(/home/bryn/.cache/coursier/arc/https/github.com/scala/scala3/releases/download/3.5.1/scala3-3.5.1-x86_64-pc-linux.tar.gz/scala3-3.5.1-x86_64-pc-linux/bin/scala-cli, --cli-default-scala-version, 3.5.1, --repository, file:///home/bryn/.cache/coursier/arc/https/github.com/scala/scala3/releases/download/3.5.1/scala3-3.5.1-x86_64-pc-linux.tar.gz/scala3-3.5.1-x86_64-pc-linux/maven2, --prog-name, scala, bsp, --json-options, /home/bryn/Projects/Code/Scala/chartools/.scala-build/ide-options-v2.json, --json-launcher-options, /home/bryn/Projects/Code/Scala/chartools/.scala-build/ide-launcher-options.json, --envs-file, /home/bryn/Projects/Code/Scala/chartools/.scala-build/ide-envs.json, /home/bryn/Projects/Code/Scala/chartools/CharTools.scala)[0m
+2024.10.09 00:05:57 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/bryn/Projects/Code/Scala/chartools/.metals/bsp.trace.json or /home/bryn/.cache/metals/bsp.trace.json[0m
+2024.10.09 00:05:57 INFO  time: Connected to build server in 0.59s[0m
+2024.10.09 00:05:57 INFO  Connected to Build server: scala v1.4.3[0m
+2024.10.09 00:05:57 INFO  time: Imported build in 0.12s[0m
+2024.10.09 00:05:57 INFO  compiling chartools_26ea356add-d97a0ac705 (1 scala source)[0m
+2024.10.09 00:05:59 INFO  time: compiled chartools_26ea356add-d97a0ac705 in 1.29s[0m
+2024.10.09 00:05:59 WARN  Unable to run doctor. Make sure `isHttpEnabled` is set to `true`.[0m
+2024.10.09 00:06:01 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-22-openjdk/src.zip, /usr/lib/jvm/java-22-openjdk/lib/src.zip. Java symbols will not be available.[0m
+2024.10.09 00:06:01 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-22-openjdk/src.zip, /usr/lib/jvm/java-22-openjdk/lib/src.zip. Java symbols will not be available.[0m
+2024.10.09 00:06:01 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-22-openjdk/src.zip, /usr/lib/jvm/java-22-openjdk/lib/src.zip. Java symbols will not be available.[0m
+2024.10.09 00:06:01 INFO  time: indexed workspace in 3.11s[0m
+2024.10.09 00:06:01 INFO  Selected port 5031[0m
+00:06:01.798 [pool-1-thread-7] DEBUG org.jboss.logging -- Logging Provider: org.jboss.logging.Slf4jLoggerProvider
+00:06:01.838 [pool-1-thread-7] INFO io.undertow -- starting server: Undertow - 2.2.20.Final
+00:06:01.849 [pool-1-thread-7] INFO org.xnio -- XNIO version 3.8.13.Final
+00:06:01.869 [pool-1-thread-7] INFO org.xnio.nio -- XNIO NIO Implementation Version 3.8.13.Final
+00:06:02.042 [pool-1-thread-7] DEBUG org.xnio -- Creating worker:null, pool size:64, max pool size:64, keep alive:60000, io threads:8, stack size:0
+00:06:02.055 [pool-1-thread-7] INFO org.jboss.threads -- JBoss Threads version 3.1.0.Final
+00:06:02.063 [XNIO-1 I/O-1] DEBUG org.xnio.nio -- Started channel thread 'XNIO-1 I/O-1', selector sun.nio.ch.EPollSelectorImpl@12980866
+00:06:02.063 [XNIO-1 I/O-2] DEBUG org.xnio.nio -- Started channel thread 'XNIO-1 I/O-2', selector sun.nio.ch.EPollSelectorImpl@55a3c826
+00:06:02.064 [XNIO-1 I/O-3] DEBUG org.xnio.nio -- Started channel thread 'XNIO-1 I/O-3', selector sun.nio.ch.EPollSelectorImpl@6eca0f3f
+00:06:02.064 [XNIO-1 I/O-6] DEBUG org.xnio.nio -- Started channel thread 'XNIO-1 I/O-6', selector sun.nio.ch.EPollSelectorImpl@66b5c7f4
+00:06:02.064 [XNIO-1 I/O-4] DEBUG org.xnio.nio -- Started channel thread 'XNIO-1 I/O-4', selector sun.nio.ch.EPollSelectorImpl@1f23e706
+00:06:02.064 [XNIO-1 I/O-5] DEBUG org.xnio.nio -- Started channel thread 'XNIO-1 I/O-5', selector sun.nio.ch.EPollSelectorImpl@2816fba6
+00:06:02.065 [XNIO-1 I/O-7] DEBUG org.xnio.nio -- Started channel thread 'XNIO-1 I/O-7', selector sun.nio.ch.EPollSelectorImpl@1d8ed520
+00:06:02.065 [XNIO-1 I/O-8] DEBUG org.xnio.nio -- Started channel thread 'XNIO-1 I/O-8', selector sun.nio.ch.EPollSelectorImpl@57b7673c
+00:06:02.065 [XNIO-1 Accept] DEBUG org.xnio.nio -- Started channel thread 'XNIO-1 Accept', selector sun.nio.ch.EPollSelectorImpl@616f0b61
+00:06:02.068 [pool-1-thread-7] DEBUG io.undertow -- Configuring listener with protocol HTTP for interface localhost and port 5031
+2024.10.09 00:06:01 INFO  Started Metals http server at http://127.0.0.1:5031[0m
+Oct 09, 2024 12:06:02 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/bryn/Projects/Code/Scala/chartools/.metals/.reports/metals-full/2024-10-09/r_compiler-error_(chartools_26ea356add-d97a0ac705)_00-06-02-856.md
+Oct 09, 2024 12:06:04 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/bryn/Projects/Code/Scala/chartools/.metals/.reports/metals-full/2024-10-09/r_compiler-error_(chartools_26ea356add-d97a0ac705)_00-06-04-606.md
+2024.10.09 00:06:21 INFO  BSP server: os.PathError$LastOnEmptyPath: empty path has no last segment[0m
+2024.10.09 00:06:21 INFO  BSP server: 	at os.PathError$LastOnEmptyPath$.apply(Path.scala:228)[0m
+2024.10.09 00:06:21 INFO  BSP server: 	at os.BasePathImpl.last$$anonfun$1(Path.scala:210)[0m
+2024.10.09 00:06:21 INFO  BSP server: 	at scala.Option.getOrElse(Option.scala:201)[0m
+2024.10.09 00:06:21 INFO  BSP server: 	at os.BasePathImpl.last(Path.scala:210)[0m
+2024.10.09 00:06:21 INFO  BSP server: 	at os.BasePathImpl.last$(Path.scala:190)[0m
+2024.10.09 00:06:21 INFO  BSP server: 	at os.RelPath.last(Path.scala:261)[0m
+2024.10.09 00:06:21 INFO  BSP server: 	at scala.build.bsp.BloopSession.isScalaFile$1(BloopSession.scala:40)[0m
+2024.10.09 00:06:21 INFO  BSP server: 	at scala.build.bsp.BloopSession.$anonfun$1(BloopSession.scala:42)[0m
+2024.10.09 00:06:21 INFO  BSP server: 	at scala.build.bsp.BloopSession.registerWatchInputs$$anonfun$1$$anonfun$1(BloopSession.scala:48)[0m
+2024.10.09 00:06:21 INFO  BSP server: 	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:15)[0m
+2024.10.09 00:06:21 INFO  BSP server: 	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:10)[0m
+2024.10.09 00:06:21 INFO  BSP server: 	at scala.build.Build$$anon$2.onNext(Build.scala:1227)[0m
+2024.10.09 00:06:21 INFO  BSP server: 	at scala.build.Build$$anon$2.onNext(Build.scala:1226)[0m
+2024.10.09 00:06:21 INFO  BSP server: 	at com.swoval.files.Observers.onNext(Observers.java:31)[0m
+2024.10.09 00:06:21 INFO  BSP server: 	at com.swoval.files.SymlinkFollowingPathWatcher$1.onNext(SymlinkFollowingPathWatcher.java:58)[0m
+2024.10.09 00:06:21 INFO  BSP server: 	at com.swoval.files.SymlinkFollowingPathWatcher$1.onNext(SymlinkFollowingPathWatcher.java:36)[0m
+2024.10.09 00:06:21 INFO  BSP server: 	at com.swoval.files.Observers.onNext(Observers.java:31)[0m
+2024.10.09 00:06:21 INFO  BSP server: 	at com.swoval.files.NioPathWatcher.runCallbacks(NioPathWatcher.java:462)[0m
+2024.10.09 00:06:21 INFO  BSP server: 	at com.swoval.files.NioPathWatcher.handleEvent(NioPathWatcher.java:486)[0m
+2024.10.09 00:06:21 INFO  BSP server: 	at com.swoval.files.NioPathWatcher.access$300(NioPathWatcher.java:35)[0m
+2024.10.09 00:06:21 INFO  BSP server: 	at com.swoval.files.NioPathWatcher$2.accept(NioPathWatcher.java:108)[0m
+2024.10.09 00:06:21 INFO  BSP server: 	at com.swoval.files.NioPathWatcher$2.accept(NioPathWatcher.java:102)[0m
+2024.10.09 00:06:21 INFO  BSP server: 	at com.swoval.files.NioPathWatcherService$2.run(NioPathWatcherService.java:95)[0m
+2024.10.09 00:06:21 INFO  BSP server: 	at com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:775)[0m
+2024.10.09 00:06:21 INFO  BSP server: 	at com.oracle.svm.core.posix.thread.PosixPlatformThreads.pthreadStartRoutine(PosixPlatformThreads.java:203)[0m
+2024.10.09 00:06:21 INFO  BSP server: os.PathError$LastOnEmptyPath: empty path has no last segment[0m
+2024.10.09 00:06:21 INFO  BSP server: 	at os.PathError$LastOnEmptyPath$.apply(Path.scala:228)[0m
+2024.10.09 00:06:21 INFO  BSP server: 	at os.BasePathImpl.last$$anonfun$1(Path.scala:210)[0m
+2024.10.09 00:06:21 INFO  BSP server: 	at scala.Option.getOrElse(Option.scala:201)[0m
+2024.10.09 00:06:21 INFO  BSP server: 	at os.BasePathImpl.last(Path.scala:210)[0m
+2024.10.09 00:06:21 INFO  BSP server: 	at os.BasePathImpl.last$(Path.scala:190)[0m
+2024.10.09 00:06:21 INFO  BSP server: 	at os.RelPath.last(Path.scala:261)[0m
+2024.10.09 00:06:21 INFO  BSP server: 	at scala.build.bsp.BloopSession.isScalaFile$1(BloopSession.scala:40)[0m
+2024.10.09 00:06:21 INFO  BSP server: 	at scala.build.bsp.BloopSession.$anonfun$1(BloopSession.scala:42)[0m
+2024.10.09 00:06:21 INFO  BSP server: 	at scala.build.bsp.BloopSession.registerWatchInputs$$anonfun$1$$anonfun$1(BloopSession.scala:48)[0m
+2024.10.09 00:06:21 INFO  BSP server: 	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:15)[0m
+2024.10.09 00:06:21 INFO  BSP server: 	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:10)[0m
+2024.10.09 00:06:21 INFO  BSP server: 	at scala.build.Build$$anon$2.onNext(Build.scala:1227)[0m
+2024.10.09 00:06:21 INFO  BSP server: 	at scala.build.Build$$anon$2.onNext(Build.scala:1226)[0m
+2024.10.09 00:06:21 INFO  BSP server: 	at com.swoval.files.Observers.onNext(Observers.java:31)[0m
+2024.10.09 00:06:21 INFO  BSP server: 	at com.swoval.files.SymlinkFollowingPathWatcher$1.onNext(SymlinkFollowingPathWatcher.java:58)[0m
+2024.10.09 00:06:21 INFO  BSP server: 	at com.swoval.files.SymlinkFollowingPathWatcher$1.onNext(SymlinkFollowingPathWatcher.java:36)[0m
+2024.10.09 00:06:21 INFO  BSP server: 	at com.swoval.files.Observers.onNext(Observers.java:31)[0m
+2024.10.09 00:06:21 INFO  BSP server: 	at com.swoval.files.NioPathWatcher.runCallbacks(NioPathWatcher.java:462)[0m
+2024.10.09 00:06:21 INFO  BSP server: 	at com.swoval.files.NioPathWatcher.handleEvent(NioPathWatcher.java:486)[0m
+2024.10.09 00:06:21 INFO  BSP server: 	at com.swoval.files.NioPathWatcher.access$300(NioPathWatcher.java:35)[0m
+2024.10.09 00:06:21 INFO  BSP server: 	at com.swoval.files.NioPathWatcher$2.accept(NioPathWatcher.java:108)[0m
+2024.10.09 00:06:21 INFO  BSP server: 	at com.swoval.files.NioPathWatcher$2.accept(NioPathWatcher.java:102)[0m
+2024.10.09 00:06:21 INFO  BSP server: 	at com.swoval.files.NioPathWatcherService$2.run(NioPathWatcherService.java:95)[0m
+2024.10.09 00:06:21 INFO  BSP server: 	at com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:775)[0m
+2024.10.09 00:06:21 INFO  BSP server: 	at com.oracle.svm.core.posix.thread.PosixPlatformThreads.pthreadStartRoutine(PosixPlatformThreads.java:203)[0m
+2024.10.09 00:06:21 INFO  compiling chartools_26ea356add-d97a0ac705 (1 scala source)[0m
+2024.10.09 00:06:21 INFO  time: compiled chartools_26ea356add-d97a0ac705 in 0.8s[0m
+2024.10.09 00:06:24 INFO  Shutting down server[0m
+2024.10.09 00:06:24 INFO  shutting down Metals[0m
+2024.10.09 00:06:24 INFO  Shut down connection with build server.[0m
+2024.10.09 00:06:24 INFO  BSP server: Oct 09, 2024 12:06:24 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification[0m
+2024.10.09 00:06:24 INFO  BSP server: WARNING: Notification threw an exception: {[0m
+2024.10.09 00:06:24 INFO  BSP server:   "jsonrpc": "2.0",[0m
+2024.10.09 00:06:24 INFO  BSP server:   "method": "build/exit",[0m
+2024.10.09 00:06:24 INFO  BSP server:   "params": null[0m
+2024.10.09 00:06:24 INFO  BSP server: }[0m
+2024.10.09 00:06:24 INFO  BSP server: java.lang.RuntimeException: java.lang.reflect.InvocationTargetException[0m
+2024.10.09 00:06:24 INFO  BSP server: 	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)[0m
+2024.10.09 00:06:24 INFO  BSP server: 	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)[0m
+2024.10.09 00:06:24 INFO  BSP server: 	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)[0m
+2024.10.09 00:06:24 INFO  BSP server: 	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)[0m
+2024.10.09 00:06:24 INFO  BSP server: 	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)[0m
+2024.10.09 00:06:24 INFO  BSP server: 	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)[0m

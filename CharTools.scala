@@ -1,7 +1,7 @@
 // Program to encode/decode hexadecimal and ASCII/Unicode :]
 
 /** Main Program */
-@main def charTools(args: String*) : Unit = {
+@main def chartools(args: String*) : Unit = {
     var opt = 0x00.asInstanceOf[Char]
     var exitCode = 0; // Reset if issue arises.
     val useInteractive = (args.length < 1); // If run with interactive prompt.
@@ -69,7 +69,7 @@
     }
 
     if (useInteractive) {
-        charTools();
+        chartools();
     } else {
         System.exit(exitCode);
     }
